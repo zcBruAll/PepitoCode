@@ -1,0 +1,7 @@
+Glossary
+========
+
+.. glossary::
+
+   variable
+     A storage location paired with an associated symbolic name (an identifier), which contains some known or unknown quantity of information referred to as a value.
