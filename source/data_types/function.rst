@@ -20,5 +20,5 @@ Examples
 
 .. code-block:: pepitoCode
 
-   Function square = x -> x * x;
+   Function square = x * x;
    Int result = square(5);  // result is 25

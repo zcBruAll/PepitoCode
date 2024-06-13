@@ -10,7 +10,7 @@ Welcome to PepitoCode's documentation!
    introduction
    getting_started
    data_types/index
-   functions
+   methods
    operators
    control_structures
    standard_library

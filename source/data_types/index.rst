@@ -13,4 +13,5 @@ Data Types
    list
    vector
    matrix
+   function
    complex
