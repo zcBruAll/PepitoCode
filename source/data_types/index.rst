@@ -15,3 +15,4 @@ Data Types
    matrix
    function
    complex
+   math

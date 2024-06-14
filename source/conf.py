@@ -22,6 +22,9 @@ class PepitoCodeLexer(RegexLexer):
             (r'"(\\\\|\\"|[^"])*"', String),
             (r"'(\\\\|\\'|[^'])*'", String.Char),
             (r'\b\d+\b', Number.Integer),
+            (r'\b\d+\.\d+\b', Number.Float),  # Matches floating point numbers
+            (r'(\d+)\+(\d+)i', Number),  # Matches complex numbers like 0+0i
+            (r'\b[A-Za-z_][A-Za-z0-9_]*<\s*[A-Za-z_][A-Za-z0-9_]*\s*>\b', Name.Class),  # Matches generic types like List<T>
             (r'(\+|-|\*|/|\^|=)', Operator),
             (r'[{}()\[\],.;]', Punctuation),
             (r'\b(if|else|for|while|return|try|catch)\b', Keyword.Reserved),
@@ -51,4 +54,4 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = 'sphinxawesome_theme'  # Ensure this matches the theme directory name within _themes
-html_static_path = ['_static']
+#html_static_path = ['_static']
